@@ -54,7 +54,10 @@ dockers:
     binary: iotweb
     image: cjimti/iotweb
     dockerfile: dockerfile/amd64/Dockerfile
-    tag_template: "{{ .Version }}"
+    extra_files:
+    - www
+    tag_templates:
+    - "{{ .Version }}"
   -
     goos: linux
     goarch: arm
@@ -62,4 +65,7 @@ dockers:
     binary: iotweb
     image: cjimti/iotweb
     dockerfile: dockerfile/armhf/Dockerfile
-    tag_template: "armhf-{{ .Version }}"
+    extra_files:
+    - www
+    tag_templates:
+    - "armhf-{{ .Version }}"

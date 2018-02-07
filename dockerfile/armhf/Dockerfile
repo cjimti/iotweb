@@ -1,5 +1,7 @@
 FROM alpine
 RUN apk --no-cache add ca-certificates
 WORKDIR /
-COPY iotweb /iotweb
+RUN mkdir www
+COPY . .
+EXPOSE 8080
 CMD ["/iotweb"]
