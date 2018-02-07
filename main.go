@@ -14,6 +14,7 @@ var log bunyan.Logger
 func main() {
 	basePath := getEnv("IOTWEB_BASEPATH", "/")
 	staticPath := getEnv("IOTWEB_STATICPATH", "www")
+	port := getEnv("IOTWEB_PORT", "8080")
 
 	staticFields := make(map[string]interface{})
 	staticFields["name"] = "iotweb"
@@ -55,8 +56,8 @@ func main() {
 	}
 
 	http.Handle("/", r)
-	log.Info("Listening on Port 8080")
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	log.Info("Listening on Port " + port)
+	log.Fatal(http.ListenAndServe(":"+port, nil))
 }
 
 // getEnv gets an environment variable or sets a default if
