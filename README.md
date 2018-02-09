@@ -20,11 +20,11 @@ are default values, override where needed.
 
 ## Try
 
-`docker run -it --rm -p 8080:8080 cjimti/iotweb:1.1.0`
+`docker run -it --rm -p 8080:8080 cjimti/iotweb:1.1.1`
 
 for arm base devices use:
 
-`docker run -it --rm -p 8080:8080 cjimti/iotweb:armhf-1.1.0`
+`docker run -it --rm -p 8080:8080 cjimti/iotweb:armhf-1.1.1`
 
 
 ### Development
