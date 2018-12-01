@@ -1,3 +1,6 @@
+**UPDATE**: This is an archived Project - For an updated version of iotweb, see https://github.com/txn2/asws, **asws** is a small fast static web server written in Go.
+
+
 [![GoDoc](https://godoc.org/github.com/cjimti/iotweb?status.svg)](https://godoc.org/github.com/cjimti/iotweb)
 [![Go Report Card](https://goreportcard.com/badge/github.com/cjimti/iotweb)](https://goreportcard.com/report/github.com/cjimti/iotweb)
 [![Docker Image Size](https://shields.beevelop.com/docker/image/image-size/cjimti/iotweb/1.1.1.svg?style=flat-square)](https://links.beevelop.com/d-shields)
